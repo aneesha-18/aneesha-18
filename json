@@ -1,0 +1,21 @@
+{
+"firstName": "A",
+"lastName": "P",
+"dob": "2000-01-22",
+"email": "a",
+"phoneNum": "4766666666",
+"salary": "1000",
+"join_date": "2000-01-22",
+"created_at": "2000-01-22",
+"created_by": "hh",
+"last_updated_date": "2000-01-22",
+"last_updated_by": "ii"
+}
+
+
+
+
+@GetMapping("/v1/employee/{id}")
+    public ResponseEntity getEmployeeByEmpID(@PathVariable(name = "id") String id) {
+        return new ResponseEntity(HttpStatus.BAD_REQUEST);
+    }
